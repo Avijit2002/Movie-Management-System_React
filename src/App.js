@@ -22,7 +22,7 @@ function App() {
       setIsLoaded(false)
       setError('')
       try {
-        const res = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=${KEY}`)
+        const res = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=${KEY}`)
         if(!res.ok){
           throw new Error("Something went wrong with fetching movies!!!")
         }
